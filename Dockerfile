@@ -9,4 +9,4 @@ COPY run_server.sh /run_server.sh
 COPY caddy_config.json /caddy_config.json
 COPY sirtunnel.py /sirtunnel.py
 
-
+ENTRYPOINT ["/bin/bash", "run_server.sh"]
